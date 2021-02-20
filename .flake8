@@ -1,0 +1,23 @@
+[flake8]
+## Common settings:
+exclude = .venv/
+
+max-line-length = 79
+max-complexity = 10
+statistics = True
+
+## flake8-import-order
+import-order-style = google
+
+## flake8-quotes
+inline-quotes = single
+multiline-quotes = double
+
+ignore =
+    ### flake8-docstrings
+    # Missing docstrings
+    D1,
+
+    ### flake8-pycodestyle
+    # closing bracket does not match indentation of opening bracket's line
+    E123,
